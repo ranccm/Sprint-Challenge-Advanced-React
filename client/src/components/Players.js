@@ -19,12 +19,11 @@ class Players extends React.Component {
             });
         }
 
-
     render() {
         return (
             <div className="playerList">
                     {this.state.players.map((item) => 
-                    <p>{item.name}</p>)}
+                    <p key={item.id}>{item.name}</p>)}
             </div>
         );
     }
